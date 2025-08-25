@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --fonte-principal: 'Inter', sans-serif;
+    --cor-fundo: #a38aff;
+    --cor-texto: #ffffff;
+    --cor-primaria: #ffffff;
+    --cor-primaria-escura: #ffffffcc;
+    --cor-cabecalho: #ffffff;
+    --cor-cartao-fundo: #000000;
+    --sombra: 0 0 0.625rem var(--cor-primaria);
+    --sombra-hover: 0 0 1.25rem var(--cor-primaria), 0 0 2.5rem var(--cor-primaria-escura);
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+header {
+    background-color: var(--cor-cabecalho);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    height: 60px;
+}
+
+.logo_casal {
+   margin-left: 65%;
+    height: 60px;
+    width: auto;
+}
+
+.imagem__casal{
+    margin-top: 2rem;
+}
+nav a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+.hero h1 {
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+    margin-left: 2rem;
+   
+}
+
+
+.hero .btn:hover {
+    box-shadow: var(--sombra-hover);
+}
+
+.hero p {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    color: #000000;
+    margin-left: 2rem;
+}
+
+.botão_01 {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    margin: 2rem 0;
+    margin-bottom: -4rem;
+    padding: 2rem;
+}
+
+.botão_01 a {
+    background: #000000;
+    color: var(--cor-texto);
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 20rem;
+    font-weight: bold; 
+    text-decoration: none;
+}
+
+.botão_01 a:hover {
+    box-shadow: var(--sombra-hover);
+}
+
+ .pagina__texto {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7rem;
+    margin-top: -10rem;
+    margin-bottom: 0.7rem;
+    margin-left: 50rem;
+    color: #000000;
+    padding: 1rem;
+ }
+
+.pagina_2 {
+    height: 46rem;
+    background-color: #e3c6ff; 
+}
+
+.logo__mao {
+    margin-left: 2rem;
+    margin-top: 10rem;
+    height: 18.6rem;
+}
+
+.pagina_3 {
+    margin-top: -12rem;
+    height: 49rem;
+    background-color: var(--cor-primaria);
+    margin-bottom: 8rem;
+}
+
+.titulo_celular {
+    color: #000000;
+    font-family: var(--fonte-principal);
+    font-size: 3rem;
+    margin-top: -25rem;
+    margin-left: 7rem;
+}
+
+.texto_celular {
+    color: #000000;
+    font-size: 1.5rem;
+    margin-left: 7rem;
+}
+
+.logo__celular {
+    margin-left: 26rem;
+    margin-top: 12rem;
+    height: 37rem;
+}
+
+.pagina_4 {
+    height: 45rem;
+    background-color: #e3c5ff;
+    margin-top: -8rem;
+}
+
+.texto_mulher {
+    color: #000000;
+    font-size: 1.4rem;
+    margin-left: 50rem;
+    margin-top: -34rem;
+}
+
+.subtitulo_mulher {
+    color: #000000;
+    font-size: 1.8rem;
+    margin-left: 50rem;
+}
+
+.logo_mulher {
+    height: 45rem;
+    margin-top: -0.01rem;
+}
+
+.pagina_5 {
+    margin-top: -8rem;
+    height: 100vh;
+    background-color: #F6EDFF;
+}
+
+.titulo_seguranca {
+    margin-top: -14rem;
+    color: #000000;
+    font-size: 2.5rem;
+    margin-left: 43rem;
+}
+
+.texto_seguranca {
+    color: #000000;
+    font-size: 1.3rem;
+    margin-left: 43rem;
+}
+
+.botao_seguranca {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    margin: 2rem 0;
+    margin-bottom: -4rem;
+    padding: 2rem;
+    margin-left: 42rem;
+}
+
+.botao_seguranca button {
+    background: #ffffff;
+    color: #000000;
+    padding: 1rem;
+    border-radius: 30px;
+    border-width: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 20rem;
+}
+
+.botao_seguranca button:hover {
+    color: #ffffff;
+    background-color: #131313;
+}
+
+.logo_guarda_chuva {
+    height: 24rem;
+    margin-top: 8rem;
+    margin-left: 2.8rem;
+}
+
+.pagina_6 {
+    height: 45rem;
+    background-color: #B394D9;
+    margin-top: -10rem;
+}
+
+.titulo_conexoes {
+    color: #000000;
+    margin-left: 5rem;
+    font-size: 2.8rem;
+    margin-top: 10rem;
+    background-color: #B394D9;
+}
+
+.texto_conexoes {
+    color: #000000;
+    margin-left: 5rem;
+    font-size: 1.4rem;
+}
+
+.ultima_imagem {
+    margin-left: 25rem;
+    height: 20rem;
+}
+
+.pagina_7 {
+    margin-top: 2rem;
+    margin-left: 13rem;
+    background-color: #A38AFF;
+    margin-bottom: 3rem;
+}
+
+.borda {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style-type: none;
+}
+
+.content ul li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.social h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons .icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+    height: 4rem;
+}
+
+.social-icons .icon img:hover {
+    transform: scale(1.1);
+}
+
