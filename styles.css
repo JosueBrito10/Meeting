@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 :root {
@@ -33,13 +34,13 @@ header {
 }
 
 .logo_casal {
-   margin-left: 65%;
-    height: 60px;
-    width: auto;
+   margin-left: 59%;
+    height: 55px;
 }
 
 .imagem__casal{
-    margin-top: 2rem;
+    margin-top: rem;
+    width: 27.8rem;
 }
 nav a {
     color: var(--cor-texto);
@@ -49,13 +50,12 @@ nav a {
 
 
 .hero h1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
     margin-top: 2rem;
     margin-bottom: 0.7rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
    
 }
-
 
 .hero .btn:hover {
     box-shadow: var(--sombra-hover);
@@ -65,7 +65,7 @@ nav a {
     font-size: 1.6rem;
     margin-top: 2rem;
     color: #000000;
-    margin-left: 2rem;
+    margin-left: 3.5rem;
 }
 
 .botão_01 {
@@ -75,6 +75,8 @@ nav a {
     margin: 2rem 0;
     margin-bottom: -4rem;
     padding: 2rem;
+    margin-left: 2rem;
+    text-align: center;
 }
 
 .botão_01 a {
@@ -93,25 +95,35 @@ nav a {
     box-shadow: var(--sombra-hover);
 }
 
+.titulo_confianca{
+    font-family: var(--fonte-principal);
+    font-size: 3rem;
+    color: #000000;
+    margin-left: 46rem;
+    margin-bottom: 13rem;
+    margin-top: -12rem;
+}
+
  .pagina__texto {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.7rem;
-    margin-top: -10rem;
+    font-size: 1.25rem;
+    margin-top: -14rem;
     margin-bottom: 0.7rem;
-    margin-left: 50rem;
+    margin-left: 45rem;
     color: #000000;
     padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
 
 .pagina_2 {
     height: 46rem;
-    background-color: #e3c6ff; 
+    background-color: #ead4ff; 
 }
 
 .logo__mao {
-    margin-left: 2rem;
-    margin-top: 10rem;
-    height: 18.6rem;
+    margin-left: 5rem;
+    margin-top: 9rem;
+    height: 20rem;
+    border-radius: 8rem;
 }
 
 .pagina_3 {
@@ -131,8 +143,9 @@ nav a {
 
 .texto_celular {
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-left: 7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .logo__celular {
@@ -141,23 +154,42 @@ nav a {
     height: 37rem;
 }
 
+.btn_registre  {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
+    text-align: center;
+}
+
+.botao_registre a {
+    background: #ffffff;
+    color: #000000;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
 .pagina_4 {
     height: 45rem;
     background-color: #e3c5ff;
     margin-top: -8rem;
 }
 
-.texto_mulher {
+.titulo_mulher {
     color: #000000;
-    font-size: 1.4rem;
-    margin-left: 50rem;
-    margin-top: -34rem;
+    font-size: 2rem;
+    margin-left: 50rem; 
+    margin-top: 10rem;
 }
 
-.subtitulo_mulher {
+.texto_mulher {
     color: #000000;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     margin-left: 50rem;
+    margin-top: -32rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .logo_mulher {
@@ -175,50 +207,55 @@ nav a {
     margin-top: -14rem;
     color: #000000;
     font-size: 2.5rem;
-    margin-left: 43rem;
+    margin-left: 49rem;
 }
 
 .texto_seguranca {
     color: #000000;
     font-size: 1.3rem;
-    margin-left: 43rem;
+    margin-left: 49rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.botao_seguranca {
-    display: flex;
-    justify-content: left;
-    gap: 1rem;
-    margin: 2rem 0;
-    margin-bottom: -4rem;
-    padding: 2rem;
-    margin-left: 42rem;
+.btn_seguranca  {
+    display: inline-block;
+    padding: 15px 50px;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+    margin-left: 49rem;
+    text-align: center;
 }
 
-.botao_seguranca button {
+.botao_seguranca a {
     background: #ffffff;
     color: #000000;
-    padding: 1rem;
-    border-radius: 30px;
-    border-width: 3px;
-    cursor: pointer;
-    transition: 0.3s;
-    width: 20rem;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.botao_seguranca button:hover {
+.botao_seguranca a:hover {
     color: #ffffff;
     background-color: #131313;
 }
 
 .logo_guarda_chuva {
-    height: 24rem;
+    height: 22rem;
     margin-top: 8rem;
-    margin-left: 2.8rem;
+    margin-left: 5rem;
+    border-radius: 35px;
 }
 
+.correcao_main {
+    height: 5rem;
+    background: #c9b0e7;
+}
+
+
 .pagina_6 {
-    height: 45rem;
-    background-color: #B394D9;
+    height: 30rem;
+    background-color: #c9b0e7;
     margin-top: -10rem;
 }
 
@@ -227,36 +264,40 @@ nav a {
     margin-left: 5rem;
     font-size: 2.8rem;
     margin-top: 10rem;
-    background-color: #B394D9;
+    background-color: #c9b0e7;
 }
 
 .texto_conexoes {
     color: #000000;
-    margin-left: 5rem;
+    margin-left: 4rem;
     font-size: 1.4rem;
+    margin-top: -2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .ultima_imagem {
     margin-left: 25rem;
-    height: 20rem;
+    height: 27.5rem;
+    margin-bottom: 9rem;
+    margin-top: -2.18rem;
 }
 
 .pagina_7 {
-    margin-top: 2rem;
-    margin-left: 13rem;
+    margin-top: 13rem;
+    margin-left: 8rem;
     background-color: #A38AFF;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
 }
 
 .borda {
-    background-color: #FFFFFF;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 70px;
+    border-radius: 13px;
+    width: 70rem;
+    max-width: 150rem;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .content h2 {
@@ -276,19 +317,21 @@ nav a {
 }
 
 .social h3 {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bold;
     color: #333;
     margin-bottom: 15px;
+    margin-left: 6rem;
 }
 
 .social-icons {
     display: flex;
     gap: 10px;
+    margin-right: 3rem;
 }
 
 .social-icons .icon img {
-    width: 30px;
+    width: 60px;
     height: 30px;
     transition: transform 0.3s;
     height: 4rem;
@@ -298,3 +341,14 @@ nav a {
     transform: scale(1.1);
 }
 
+.aplicativos {
+    display: flex;
+    gap: 10px;
+    margin-right: 3rem;
+    margin-top: 10rem;    
+}
+
+.aplicativos .icon-app-play img {
+    width: 8rem;
+    height: 5rem;
+}

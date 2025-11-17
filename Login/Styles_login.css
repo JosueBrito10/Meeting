@@ -1,116 +1,116 @@
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(45deg,#a38aff, #ede2fa);
-     
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(45deg,#a38aff, #ede2fa);
+   
 
-    /* background: linear-gradient(135deg, #4CAF50, #2e7d32); */
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
+  /* background: linear-gradient(135deg, #4CAF50, #2e7d32); */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .logo { 
-    display: flexbox;
-    justify-content: center;
-    padding: auto;
-    align-items: center;
-    margin-bottom: 0.70rem;
-    width: 75px;
-    height: 75px;
-    background-image: url('https://cdn-icons-png.flaticon.com/512/1055/1055646.png');
-    
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .login-box {
-    background: #fff;
-    padding: 2.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-  }
-  
-  .login-box h1 {
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  .login-box p {
-    margin-bottom: 2rem;
-    color: #666;
-  }
-  
-  form input {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.75rem;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-  }
-  
-  form input:focus {
-    border-color: #7428b3;
-    outline: none;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
-  button {
-    background: linear-gradient(45deg,rgb(183, 130, 253), rgb(194, 148, 247));
-    border-radius: 5%;
-    padding: 1rem;
-    margin-top: 1rem;
-    font-weight: bold;
-    margin-left: 0.10rem;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    width: 80%;
-    font-size: 1rem;  
-    align-items: center;
+.logo { 
+  display: flexbox;
+  justify-content: center;
+  padding: auto;
+  align-items: center;
+  margin-bottom: 0.70rem;
+  width: 75px;
+  height: 75px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/1055/1055646.png');
+  
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-box {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-box h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.login-box p {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+form input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+form input:focus {
+  border-color: #7428b3;
+  outline: none;
+}
+
+button {
+  background: linear-gradient(45deg,rgb(183, 130, 253), rgb(194, 148, 247));
+  border-radius: 5%;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  margin-left: 0.10rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 80%;
+  font-size: 1rem;  
+  align-items: center;
 }
 
 button:hover {
-    background: linear-gradient(45deg,rgb(172, 85, 230), rgb(149, 33, 226));
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
+  background: linear-gradient(45deg,rgb(172, 85, 230), rgb(149, 33, 226));
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
-  
-  @media (max-width: 600px) {
-    .login-box {
-      padding: 1.5rem;
-      width: 90%;
-    }
-  
-    .login-box h1 {
-      font-size: 1.5rem;
-    }
-  
-    form input {
-      padding: 0.75rem;
-      font-size: 0.9rem;
-    }
-  
-    button {
-      padding: 0.75rem;
-      font-size: 0.9rem;
-    }
+
+@media (max-width: 600px) {
+  .login-box {
+    padding: 1.5rem;
+    width: 90%;
   }
 
+  .login-box h1 {
+    font-size: 1.5rem;
+  }
+
+  form input {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+}
