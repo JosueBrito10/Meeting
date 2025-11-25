@@ -4,18 +4,20 @@ const bodyParser = require("body-parser");
 const db = require("./db");
 
 const app = express();
+app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-app.post("/cadastro", async (req, res) => {
-    const { nome, email, senha } = req.body;
+app.post("/cadastro", (req, res) => {
+    const { email, senha, telefone } = req.body;
 
-    const senhaHash = await bcrypt.hash(senha, 10);
+    const sql = "INSERT INTO usuarios (email, senha, telefone) VALUES (?, ?, ?)";
+    db.query(sql, [email, senha, telefone], (err, result) => {
+        if (err) {
+            console.log(err);
+            return res.send("Erro ao cadastrar!");
+        }
 
-    const sql = "INSERT INTO usuarios (nome, email, senha_hash) VALUES (?, ?, ?)";
-
-    db.query(sql, [nome, email, senhaHash], (err) => {
-        if (err) return res.send("Erro ao cadastrar: " + err);
         res.send("Cadastro realizado com sucesso!");
     });
 });
@@ -31,7 +33,9 @@ app.post("/login", (req, res) => {
 
         const usuario = results[0];
 
-        const senhaCorreta = await bcrypt.compare(senha, usuario.senha_hash);
+        if (senha !== usuario.senha) {
+            return res.send("Senha incorreta");
+        }
 
         if (!senhaCorreta) return res.send("Senha incorreta");
 

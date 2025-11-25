@@ -1,28 +1,15 @@
-const db = require("./db");
-const bcrypt = require("bcryptjs");
+document.getElementById("formLogin").addEventListener("submit", async (event) => {
+    event.preventDefault();
 
-exports.fazerLogin = (req, res) => {
-    const { email, senha } = req.body;
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
 
-    const sql = "SELECT * FROM usuarios WHERE email = ?";
-
-    db.query(sql, [email], async (err, results) => {
-        if (err) {
-            console.log(err);
-            return res.send("Erro no servidor");
-        }
-
-        if (results.length === 0) {
-            return res.send("Usuário não encontrado");
-        }
-
-        const usuario = results[0];
-        const senhaCorreta = await bcrypt.compare(senha, usuario.senha_hash);
-
-        if (!senhaCorreta) {
-            return res.send("Senha incorreta");
-        }
-
-        res.send("Login realizado com sucesso!");
+    const resposta = await fetch("/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, senha })
     });
-};
+
+    const resultado = await resposta.text();
+    alert(resultado);
+});

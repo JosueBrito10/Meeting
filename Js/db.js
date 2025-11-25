@@ -1,15 +1,19 @@
-const mysql = require("mysql2");
+const mysql = require('mysq12');
 
-const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "123abc",    // coloque sua senha
-    database: "login_db"
+const connection = mysql.createConnection({
+    host: 'localhost',   
+    port: 3306,          
+    user: 'root',
+    password: '123abc',
+    database: 'login_db'
 });
 
-db.connect((err) => {
-    if (err) throw err;
-    console.log("MySQL conectado!");
+connection.connect((err) => {
+    if (err) {
+        console.log('Erro ao conectar ao MySQL:', err);
+    } else {
+        console.log('Conectado ao MySQL');
+    }
 });
 
-module.exports = db;
+module.exports = connection;

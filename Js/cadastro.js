@@ -7,7 +7,7 @@ document.getElementById("formCadastro").addEventListener("submit", async (event)
 
     // Envia para o server.js
     
-    const resposta = await fetch("/cadastrar", {
+    const resposta = await fetch("/cadastro", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
